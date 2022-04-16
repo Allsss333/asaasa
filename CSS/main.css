@@ -1,0 +1,285 @@
+@font-face {
+    font-family: ho;
+    src: url(../Fonts/MechanismoRegular-p7ywa.otf);
+}
+@font-face {
+    font-family: ro;
+    src: url(../Fonts/Rixon-nj00.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: black;
+}
+
+
+
+header{
+    font-family: ho;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.812);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h2{
+    margin: 10px;
+}
+
+header h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    
+}
+
+header li{
+    margin-left: 20px;
+    transition: 0.3s;
+
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul li:hover{
+    transform: scale(1.2);
+}
+
+.content{
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.959);
+    color: red;
+}
+
+.content .description{
+    margin: 150px 100px;
+}
+
+.content .description .links{
+    text-decoration: none;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .description .links a{
+    color: white;
+    transition: 0.3s;
+}
+
+
+.content .description .links a:hover{
+    transform: scale(1.5);
+}
+
+.content .description p{
+    font-size: 20px;
+}
+
+
+
+
+.cards{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: red;
+}
+
+.cards .servcies{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.cards .hole_card{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card{
+    display: flex;
+    margin: 70px 10px;
+    width: 25%;
+    height: 75%;
+    background-color: rgba(255, 0, 0, 0.812);
+    border-radius: 50px;
+    border-radius: 10px;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 11px 3px 28px 15px rgba(255 0 0 / 0.25);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+.card img{
+    width: 80px;
+    height: 80px;
+}
+
+.card .card_things{
+    text-align: center;
+}
+
+
+.videos{
+    width:100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: red;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.vid{
+    display: flex;
+    justify-content: center;
+}
+
+.videos h3{
+    position: relative;
+    left: 220px;
+}
+
+.videos .vid video{
+    width: 374px;
+    height: 387px;
+}
+
+
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.933);
+    color: red;
+    text-align: center;
+    height: 30vh;
+}
+
+
+footer .contacts{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 1023px){
+    *{
+        padding: 0;
+        margin: 0;
+   
+    }
+
+    header{
+        font-size: 13px;
+    }
+    
+    header h2{
+        font-size: 14px;
+    }
+
+    .content .description{
+        margin: 100px 50px;
+    }
+
+
+    
+  .content .description p{
+      font-size: 17px;
+  }
+
+  .content .description .links{
+    flex-direction: column;
+}
+
+
+
+  .cards{
+    height: 100%;
+    
+  }
+
+  .cards .hole_card{
+      flex-direction: column;
+  }
+  .card{
+      width: 90%;
+      margin-left: 20px;
+  }
+
+  footer .contacts{
+    flex-direction: column;
+}
+   
+    
+  
+
+    .videos h3{
+    position: relative;
+    left: 150px;
+}
+.videos .vid video{
+    margin-right: 50px;
+    width: 250px;
+    height: 200px;
+}
+
+ footer{
+     font-size: 13px;
+ }
+
+
+ 
+}
+
+
+@media (width:280px){
+
+    .videos h3{
+        position: relative;
+        left: 120px;
+    }
+
+    
+    .videos .vid video{
+        width: 100px;
+        height: 200px;
+        
+    }
+}
